@@ -1,0 +1,75 @@
+
+// Start Styling
+.header__section {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .header__section-image-container{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        margin-bottom: 25px;
+
+        .header__section-image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header__section-content{
+        width: 100%;
+        background: $yellow;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .header__section-name{
+            margin-top: -60px;
+            font-family: 'EB Garamond', serif;
+            font-size: 5em;
+            letter-spacing: 1px;
+        }
+        .header__section-info{
+            display: flex;
+            flex-direction: column;
+            .header__section-header{
+                margin: 20px 0;
+                letter-spacing: 19px;
+            }
+            .flex-container{
+                display: flex;
+                .header__section-contacts{
+                    margin: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    &:nth-of-type(3) {
+                        margin-right: 0;
+                    }
+                    .icon{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 5px;
+                        fill: currentColor;
+                        color: $black;
+                    }
+                    span{
+                        display: block;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+}
