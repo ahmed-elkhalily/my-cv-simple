@@ -3,4 +3,12 @@ $black: #333;
 $white: #e1e1e1;
 $sec: #4d4c4c;
 $sub: #9b9b9b;
-$anchor: #3498db;
+$anchor: #3e3e3e;
+$level3: #717171;
+// @media query mixins
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+@media (min-width: 600px) and (max-width: 899px){ @content; }
+}
