@@ -40,20 +40,24 @@
             letter-spacing: 2px;
             position: relative;
             .sup-header {
-                font-size: 35px;
+                font-size: 14px;
                 color: #000;
                 position: absolute;
-                right: 0;
-                top: 28%;
+                right: -23px;
+                top: 38px;
                 line-height: 0.5px;
+                
 
                 @include for-phone-only {
-                    top: 26%;
-                    font-size: 12px;
+                    top: 15px;
+                    font-size: 8px;
+                    right: -23px;
+                
                 }
                 @include for-tablet-portrait-up {
-                    top: 29%;
-                    font-size: 25px;
+                    top: 24px;
+                    font-size: 12px;
+                    right: -26px;
                 }
             }
             @include for-phone-only {

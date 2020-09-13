@@ -83,23 +83,25 @@ a {
   position: relative;
 }
 .header__section .header__section-content .header__section-name .sup-header {
-  font-size: 35px;
+  font-size: 14px;
   color: #000;
   position: absolute;
-  right: 0;
-  top: 28%;
+  right: -23px;
+  top: 38px;
   line-height: 0.5px;
 }
 @media (max-width: 599px) {
   .header__section .header__section-content .header__section-name .sup-header {
-    top: 26%;
-    font-size: 12px;
+    top: 15px;
+    font-size: 8px;
+    right: -23px;
   }
 }
 @media (min-width: 600px) and (max-width: 899px) {
   .header__section .header__section-content .header__section-name .sup-header {
-    top: 29%;
-    font-size: 25px;
+    top: 24px;
+    font-size: 12px;
+    right: -26px;
   }
 }
 @media (max-width: 599px) {
