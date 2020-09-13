@@ -2,7 +2,9 @@
 .main__content{
     padding: 0 15px;
     display: flex;
-
+    @include for-biger-than-tablet {
+        flex-direction: column;
+    }
     @include for-phone-only {
         flex-direction: column;
     }
@@ -16,13 +18,16 @@
         @include for-phone-only {
             padding: 0;
         }
+        @include for-tablet-portrait-up {
+            margin-top: 30px;
+        }
         .single__section{
+            flex-shrink: 0;
             @include for-phone-only {
                 margin-top: 20px;
             }
-            @include for-tablet-portrait-up{
+            @include for-biger-than-tablet{
                 margin-top: 30px;
-
             }
             .single__section-header{
                 padding-bottom: 5px;
@@ -33,6 +38,9 @@
                 letter-spacing: 4px;
                 @include for-phone-only {
                     margin-bottom: 15px;
+                }
+                @include for-biger-than-tablet{
+                    margin-top: 30px;
                 }
             }
             .single__section-sub-header{
@@ -81,8 +89,13 @@
                 }
                 @include for-tablet-portrait-up{
                     padding: 0;
-                    font-size: 16px;
+                    font-size: 22px;
                 }
+                @include for-biger-than-tablet{
+                    font-size: 22px;
+                    margin-top: 20px;
+                }
+                
                 .level__one{
                     margin: 10px 0;
                 }
@@ -109,6 +122,10 @@
                         flex-wrap: wrap;
                         justify-content: center;
                     }
+                    @include for-biger-than-tablet{
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
                     .single__section-portofolio-container {
                         margin-left: 5px;
                         @include for-phone-only {
@@ -116,10 +133,17 @@
                         }
                         @include for-tablet-portrait-up{
                             margin: 10px 0;
+                            width: 100%;
+                        }
+                        @include for-biger-than-tablet{
+                            margin: 15px 0;
                         }
                         &:nth-of-type(1) {
                             @include for-tablet-portrait-up{
                                 margin-right: 5px;
+                            }
+                            @include for-biger-than-tablet{
+                                margin-right: 15px;
                             }
                         }
                         .portofolio{
@@ -128,11 +152,31 @@
                             border: 1px solid $sub;
                             border-radius: 3px;
                             cursor: pointer;
+                            margin: 10px 0;
+
+                            @include for-phone-only {
+                                width: 100%;
+                            }
+                            @include for-tablet-portrait-up {
+                                width: 100%;
+                            }
+                            @include for-biger-than-tablet {
+                                width: 380px;
+                            }
                         }
                         .portofolio-header{
                             color: $anchor;
-                            @include for-tablet-portrait-up {
-                                text-align: center;
+                            font-size: 18px;
+                            text-align: center;
+
+                            @include for-phone-only{
+                                font-size: 22px;
+                            }
+                            @include for-tablet-portrait-up{
+                                font-size: 23px;
+                            }
+                            @include for-biger-than-tablet {
+                                font-size: 23px;
                             }
                         }
                     }

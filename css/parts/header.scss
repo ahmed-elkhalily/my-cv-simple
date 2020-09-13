@@ -37,7 +37,25 @@
             margin-top: -60px;
             font-family: 'EB Garamond', serif;
             font-size: 5em;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            position: relative;
+            .sup-header {
+                font-size: 35px;
+                color: #000;
+                position: absolute;
+                right: 0;
+                top: 28%;
+                line-height: 0.5px;
+
+                @include for-phone-only {
+                    top: 26%;
+                    font-size: 12px;
+                }
+                @include for-tablet-portrait-up {
+                    top: 29%;
+                    font-size: 25px;
+                }
+            }
             @include for-phone-only {
                 font-size: 2.2em;
                 margin-top: -28px;
