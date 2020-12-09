@@ -9,13 +9,15 @@
 }
 
 .underline {
-  color: #F8D232;
-  border-bottom: 2px solid #F8D232;
+  color: #EEC207;
+  border-bottom: 2px solid #EEC207;
+  padding-bottom: 3px;
 }
 
 .love {
   color: #e32222;
-  border-bottom: 1px solid #e32222;
+  border-bottom: 2px solid #e32222;
+  padding-bottom: 3px;
 }
 
 .mt-20 {
